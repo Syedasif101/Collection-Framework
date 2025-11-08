@@ -18,36 +18,36 @@ public class HashMapDemo {
         map.put(14, "Insha Syed");
         map.put(16, "Meer Faheem Ali");
 
-//        System.out.println(map);
+       System.out.println(map);
 
         String student = map.get(14);
-//        System.out.println(student);
+       System.out.println(student);
 
-//        System.out.println(map.get(69)); // null
+       System.out.println(map.get(69)); // null
 
-//        System.out.println(map.containsKey(69)); // false
+       System.out.println(map.containsKey(69)); // false
 
-//        System.out.println(map.containsKey(14));
+       System.out.println(map.containsKey(14));
 
-        // iterate through map
+        iterate through map
 
-//        Set<Integer> m = map.keySet();
+       Set<Integer> m = map.keySet();
 
-//        for(int i : map.keySet())
-//        {
-//            System.out.println(map.get(i));
-//        }
+       for(int i : map.keySet())
+       {
+           System.out.println(map.get(i));
+       }
 
-        // iterate using entrySet();
+        iterate using entrySet();
 
-//        Set<Map.Entry<Integer,String>> entries = map.entrySet();
-//
-//        for(Map.Entry<Integer,String> entry: entries)
-//        {
-//            System.out.println(entry.getKey() + " " + entry.getValue());
-//        }
+       Set<Map.Entry<Integer,String>> entries = map.entrySet();
 
-//        Iterate using Map.Entry();
+       for(Map.Entry<Integer,String> entry: entries)
+       {
+           System.out.println(entry.getKey() + " " + entry.getValue());
+       }
+
+       Iterate using Map.Entry();
 
         Set<Map.Entry<Integer, String>> entries = map.entrySet();
 
@@ -61,6 +61,14 @@ public class HashMapDemo {
         {
             System.out.print(map.get(m) + " ");
         }
+
+
+
+        boolean res = map.remove(12, "Rahull Bhat");
+        System.out.println("REMOVED ? :" + res);
+        System.out.println(map);
+
+        
 
 
 
