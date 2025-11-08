@@ -29,7 +29,7 @@ public class HashMapDemo {
 
        System.out.println(map.containsKey(14));
 
-        iterate through map
+        // iterate through map
 
        Set<Integer> m = map.keySet();
 
@@ -38,7 +38,7 @@ public class HashMapDemo {
            System.out.println(map.get(i));
        }
 
-        iterate using entrySet();
+        // iterate using entrySet();
 
        Set<Map.Entry<Integer,String>> entries = map.entrySet();
 
@@ -47,7 +47,7 @@ public class HashMapDemo {
            System.out.println(entry.getKey() + " " + entry.getValue());
        }
 
-       Iterate using Map.Entry();
+       // Iterate using map.entrySet();
 
         Set<Map.Entry<Integer, String>> entries = map.entrySet();
 
